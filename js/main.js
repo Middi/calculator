@@ -36,6 +36,7 @@ function key(arg) {
 // if 0 is in display or the argument 0 is passed into it clear the display
     if(display === "0" || arg === 0) {
         display = "";
+        math = [];
     }
     
     //take the display and add the argument to it.
