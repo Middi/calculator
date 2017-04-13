@@ -29,7 +29,8 @@ startTime();
 // ---- Display ---- //
 
 // create display 0
-var display = "0";
+var display = "";
+var math = [];
 
 function key(arg) {
 // if 0 is in display or the argument 0 is passed into it clear the display
@@ -38,7 +39,11 @@ function key(arg) {
     }
     
     //take the display and add the argument to it.
+    math.push(arg);
+    console.log(math);
     display += arg;
+
+    
     //print display to screen.
     document.getElementById('display').innerHTML =
     "<h2>" + display + "</h2>";
