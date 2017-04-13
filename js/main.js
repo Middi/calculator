@@ -22,3 +22,7 @@ function startTime() {
 
 startTime();
 
+function key(num) {
+    document.getElementById('display').innerHTML =
+    "<h2>" + num + "</h2>";
+}

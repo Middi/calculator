@@ -68,15 +68,25 @@ section {
 }
 
 #status-bar-clock, #status-bar-logo, #status-bar-right {
-    padding-top: 6px;
-    width: 90px;
+    padding: 6px;
+    width: 120px;
     text-align: center;
     p {color: $white}
 }
 
-#status-bar-logo p {font-size: 10px}
+#status-bar-logo p {
+    font-size: 12px;
+    text-align: left;
+}
 
-.display {
+#status-bar-right p {
+    font-size: 12px;
+    text-align: right;
+}
+
+
+
+#display {
     width: 100%;
     background-color: $dark-grey;
     height: 130px;
