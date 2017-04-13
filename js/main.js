@@ -22,7 +22,20 @@ function startTime() {
 
 startTime();
 
-function key(num) {
+// create display 0
+var display = "0";
+
+function key(arg) {
+// if 0 is in display or the argument 0 is passed into it clear the display
+    if(display === "0" || arg === 0) {
+        display = "";
+    }
+    
+    //take the display and add the argument to it.
+    display += arg;
+    //print display to screen.
     document.getElementById('display').innerHTML =
-    "<h2>" + num + "</h2>";
+    "<h2>" + display + "</h2>";
 }
+
+key(0);
