@@ -180,6 +180,8 @@ section {
   text-align: center; }
   #status-bar-clock p, #status-bar-logo p, #status-bar-right p {
     color: #fbfbfb; }
+  #status-bar-clock span, #status-bar-logo span, #status-bar-right span {
+    font-weight: 700; }
 
 #status-bar-logo p, #status-bar-right p {
   padding-top: 1px;

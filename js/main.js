@@ -1,3 +1,5 @@
+// ---- Clock ---- //
+
 // Add zero in front of minutes if less than 10
 function checkTime(i) {
     if (i < 10) {
@@ -21,6 +23,10 @@ function startTime() {
 }
 
 startTime();
+
+
+
+// ---- Display ---- //
 
 // create display 0
 var display = "0";
