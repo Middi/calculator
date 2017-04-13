@@ -20,7 +20,6 @@ body {
 //--------------------------------
 
 h1, h2, h3, h4 {
-  font-family: 'Open Sans';
   font-weight: 200;
   color: $text;
 }
@@ -35,8 +34,6 @@ h2 {
   }
 
 h3 {font-size: 2.3em}
-
-h4 {font-size: 1.414em}
 
 p {color: $text}
 
@@ -55,13 +52,14 @@ a {
 // Misc Tags
 //--------------------------------
 
-small {font-size: 0.707em}
-
 strong {font-weight: 700}
 
 em {font-style: italic}
 
-i {color: $white}
+i {
+  color: $white;
+  padding: 0 1px;
+}
 
 
 //--------------------------------
@@ -78,9 +76,6 @@ i {color: $white}
 	color: #622F1C;
 }
 
-.large {font-size: 40px}
-
-
 
 //--------------------------------
 // Header Typography
@@ -92,10 +87,6 @@ header a {
   font-weight: 300;
 
   i, span {color: $grey}
-
-  &:hover {
-    text-decoration: none;
-  }
 }
 
 

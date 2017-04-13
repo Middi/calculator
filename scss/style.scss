@@ -8,7 +8,6 @@ Version: 1.0
 */
 
 
-
 @import "normalise";
 @import "colors";
 @import "typography";
@@ -18,9 +17,6 @@ Version: 1.0
 
 // ------- Page Contents -------- //
 
-html {
-	height: 100%;
-}
 
 body {
 	position:		     relative;
@@ -30,87 +26,87 @@ body {
 }
 
 header {
-	width: 100%;
-	background-color: $brand;
-	height: 56px;
-    top: 0;
-	margin: 0 auto;
+	width:     100%;
+	height:    56px;
+    top:          0;
     position: fixed;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+    z-index:    100;
+	background-color: $brand;
+	display:     -webkit-box;
+	display:     -ms-flexbox;
+	display:            flex;
 	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-    z-index: 100;
+	-ms-flex-pack:    center;
+	justify-content:  center;
 }
 
 .logo {
 	-ms-flex-item-align: center;
-	-ms-grid-row-align: center;
-	align-self: center;
+	-ms-grid-row-align:  center;
+	align-self:          center;
 }
 
 section {
     margin: 150px auto 0;
-    width: 400px;
+    width:         400px;
 }
 
 .status-bar {
-    width: 100%;
+    width:   100%;
     display: flex;
     justify-content: space-between;
-    background-color: $dark-grey;
+    background-color:   $dark-grey;
 }
 
 #status-bar-clock, #status-bar-logo, #status-bar-right {
-    padding: 6px;
-    width: 120px;
+    padding:       6px;
+    width:       120px;
     text-align: center;
+
     p {color: $white}
 }
 
 #status-bar-logo p {
-    font-size: 12px;
+    font-size:  12px;
     text-align: left;
 }
 
 #status-bar-right p {
-    font-size: 12px;
+    font-size:   12px;
     text-align: right;
 }
 
 #display {
-    width: 100%;
-    background-color: $dark-grey;
-    height: 130px;
-    text-align: right;
+    height:      130px;
+    width:        100%;
+    text-align:  right;
     padding: 26px 20px;
+    background-color: $dark-grey;
 }
 
 .row {
-    display: flex;
+    width:             100%;
+    display:           flex;
     justify-content: center;
-    align-content: center;
-    width: 100%;
+    align-content:   center;
 }
 
 .key {
     height: 100px;
-    width: 100px;
-    border: 0.1px solid $border;
-    text-align: center;
-	display: table-cell;
+    width:  100px;
+    text-align:     center;
+	display:    table-cell;
 	vertical-align: middle;
-	transition: all 0.3s ease;
+	transition:   all 0.3s ease;
+    border: 0.1px solid $border;
 
     &:hover {background-color: darken($white, 12)}
     &:active {background-color: darken($white, 25)}
 }
 
 .k-0 {
-    min-width: 200px;
-    text-align: left;
+    min-width:   200px;
+    text-align:   left;
     padding-left: 40px;
 }
 

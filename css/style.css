@@ -56,7 +56,6 @@ body {
   line-height: 1.2; }
 
 h1, h2, h3, h4 {
-  font-family: 'Open Sans';
   font-weight: 200;
   color: #262626; }
 
@@ -73,9 +72,6 @@ h2 {
 h3 {
   font-size: 2.3em; }
 
-h4 {
-  font-size: 1.414em; }
-
 p {
   color: #262626; }
 
@@ -85,9 +81,6 @@ a {
   font-size: 1.1rem;
   font-weight: 600; }
 
-small {
-  font-size: 0.707em; }
-
 strong {
   font-weight: 700; }
 
@@ -95,7 +88,8 @@ em {
   font-style: italic; }
 
 i {
-  color: #fbfbfb; }
+  color: #fbfbfb;
+  padding: 0 1px; }
 
 .fa-heart {
   font-size: 12px;
@@ -105,17 +99,12 @@ i {
   font-size: 12px;
   color: #622F1C; }
 
-.large {
-  font-size: 40px; }
-
 header a {
   font-size: 1.8rem;
   color: #fbfbfb;
   font-weight: 300; }
   header a i, header a span {
     color: #323232; }
-  header a:hover {
-    text-decoration: none; }
 
 .built {
   color: white;
@@ -186,9 +175,6 @@ header a {
 .visible {
   display: block; }
 
-html {
-  height: 100%; }
-
 body {
   position: relative;
   margin: 0;
@@ -197,18 +183,17 @@ body {
 
 header {
   width: 100%;
-  background-color: #f27b21;
   height: 56px;
   top: 0;
-  margin: 0 auto;
   position: fixed;
+  z-index: 100;
+  background-color: #f27b21;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  z-index: 100; }
+  justify-content: center; }
 
 .logo {
   -ms-flex-item-align: center;
@@ -241,26 +226,26 @@ section {
   text-align: right; }
 
 #display {
-  width: 100%;
-  background-color: #181818;
   height: 130px;
+  width: 100%;
   text-align: right;
-  padding: 26px 20px; }
+  padding: 26px 20px;
+  background-color: #181818; }
 
 .row {
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-content: center;
-  width: 100%; }
+  align-content: center; }
 
 .key {
   height: 100px;
   width: 100px;
-  border: 0.1px solid #5a5a5a;
   text-align: center;
   display: table-cell;
   vertical-align: middle;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  border: 0.1px solid #5a5a5a; }
   .key:hover {
     background-color: gainsboro; }
   .key:active {
@@ -307,8 +292,6 @@ footer {
 =============================================*/
 /* -- BREAK 1 -- */
 @media all and (max-width: 440px) {
-  html {
-    font-size: 14px; }
   section {
     margin: 0px auto;
     max-width: 400px;
