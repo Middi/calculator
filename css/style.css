@@ -248,6 +248,8 @@ section {
   transition: all 0.3s ease; }
   .key:hover {
     background-color: gainsboro; }
+  .key:active {
+    background-color: #bbbbbb; }
 
 .k-0 {
   min-width: 200px;
@@ -260,11 +262,15 @@ section {
     color: #fbfbfb; }
   .orange:hover {
     background-color: #e76b0e; }
+  .orange:active {
+    background-color: #bc570b; }
 
 .grey {
   background-color: #c1c2c3; }
   .grey:hover {
     background-color: #acaeaf; }
+  .grey:active {
+    background-color: #929496; }
 
 footer {
   background: #f27b21;

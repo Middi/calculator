@@ -93,7 +93,9 @@ section {
 	display: table-cell;
 	vertical-align: middle;
 	transition: all 0.3s ease;
+
     &:hover {background-color: darken($white, 12)}
+    &:active {background-color: darken($white, 25)}
 }
 
 .k-0 {
@@ -107,12 +109,14 @@ section {
     h3 {color: $white}
 
     &:hover {background-color: darken($brand, 6)}
+    &:active {background-color: darken($brand, 15)}
 }
 
 .grey {
     background-color: $light-grey;
 
     &:hover {background-color: darken($light-grey, 8)}
+    &:active {background-color: darken($light-grey, 18)}
 }
 
 
