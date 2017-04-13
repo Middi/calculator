@@ -191,11 +191,6 @@ body {
   min-height: 100%;
   background-color: #f0f0f0; }
 
-main {
-  margin: 0 auto;
-  padding-top: 60px;
-  max-width: 640px; }
-
 nav {
   width: 100%;
   background-color: #f27b21;
@@ -218,7 +213,7 @@ nav {
 
 section {
   clear: both;
-  margin: 80px auto;
+  margin: 160px auto;
   width: 400px;
   height: 662px; }
 
@@ -289,12 +284,10 @@ footer {
 =                 MEDIA QUERIES               =
 =============================================*/
 /* -- BREAK 1 -- */
-@media all and (max-width: 800px) {
+@media all and (max-width: 440px) {
   html {
     font-size: 14px; }
-  main {
-    margin-bottom: 20px; }
-  article {
-    padding: 36px 32px 36px 15px;
-    height: 65px;
-    border-radius: 0; } }
+  section {
+    margin: 56px auto;
+    max-width: 400px;
+    max-height: 662px; } }
