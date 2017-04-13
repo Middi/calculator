@@ -32,7 +32,7 @@ body {
 
 
 
-nav {
+header {
 	width: 100%;
 	background-color: $brand;
 	height: 56px;
@@ -56,20 +56,25 @@ nav {
 
 section {
     clear: both;
-    margin: 150px auto;
+    margin: 150px auto 0;
     width: 400px;
-    height: 662px;
 }
 
-#status-bar-clock, #status-bar-logo {
+.status-bar {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
     background-color: $dark-grey;
-    text-align: center;
+}
+
+#status-bar-clock, #status-bar-logo, #status-bar-right {
     padding-top: 6px;
+    width: 90px;
+    text-align: center;
     p {color: $white}
 }
 
-#status-bar-logo {display: none}
+#status-bar-logo p {font-size: 10px}
 
 .display {
     width: 100%;
@@ -83,6 +88,8 @@ section {
     display: flex;
     justify-content: center;
     align-content: center;
+    width: 100%;
+    // border: 1px solid red;
 }
 
 .key {

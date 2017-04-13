@@ -21,47 +21,53 @@
 
 <body>
 
-    <nav>
+    <header>
         <h1 class="logo"><a href="#"><i class="fa fa-free-code-camp" aria-hidden="true"></i> JS<span>Calculator</span></a></h1>
-    </nav>
-    <main>
-<section>
-    <div id="status-bar-clock"></div>
+    </header>
 
-    <div id="status-bar-logo"><p><i class="fa fa-free-code-camp" aria-hidden="true"></i> JS<span>Calculator</span></h1></div>
+    <main>
+
+<section>
+    <div class="status-bar">
+        <div id="status-bar-logo"><p><i class="fa fa-free-code-camp" aria-hidden="true"></i> JS<span>Calculator</span></h1></div>
+        <div id="status-bar-clock"></div>
+        <div id="status-bar-right"></div>
+    </div>
+
+    
 
     <div class="display"> 
     <h2>0</h2>
     </div>
     
     <div class="row row-1">
-        <a href="#"><div class="key grey cancel"><h3>AC</h3></div></a>
-        <a href="#"><div class="key grey negative"><h3>+/-</h3></div></a>
-        <a href="#"><div class="key grey percentage"><h3>%</h3></div></a>
-        <a href="#"><div class="key orange divide"><h3>÷</h3></div></a>
+        <a href="#" onclick="cancel();"><div class="key grey cancel"><h3>AC</h3></div></a>
+        <a href="#" onclick="negative();"><div class="key grey negative"><h3>+/-</h3></div></a>
+        <a href="#" onclick="percentage();"><div class="key grey percentage"><h3>%</h3></div></a>
+        <a href="#" onclick="divide();"><div class="key orange divide"><h3>÷</h3></div></a>
     </div>
     <div class="row row-2">
-        <a href="#"><div class="key k-7"><h3>7</h3></div></a>
-        <a href="#"><div class="key k-8"><h3>8</h3></div></a>
-        <a href="#"><div class="key k-9"><h3>9</h3></div></a>
-        <a href="#"><div class="key orange multiply"><h3>x</h3></div></a>
+        <a href="#" onclick="k7();"><div class="key k-7"><h3>7</h3></div></a>
+        <a href="#" onclick="k8();"><div class="key k-8"><h3>8</h3></div></a>
+        <a href="#" onclick="k9();"><div class="key k-9"><h3>9</h3></div></a>
+        <a href="#" onclick="multiply();"><div class="key orange multiply"><h3>x</h3></div></a>
     </div>
     <div class="row row-3">
-        <a href="#"><div class="key k-4"><h3>4</h3></div></a>
-        <a href="#"><div class="key k-5"><h3>5</h3></div></a>
-        <a href="#"><div class="key k-6"><h3>6</h3></div></a>
-        <a href="#"><div class="key orange minus"><h3>-</h3></div></a>
+        <a href="#" onclick="k4();"><div class="key k-4"><h3>4</h3></div></a>
+        <a href="#" onclick="k5();"><div class="key k-5"><h3>5</h3></div></a>
+        <a href="#" onclick="k6();"><div class="key k-6"><h3>6</h3></div></a>
+        <a href="#" onclick="minus();"><div class="key orange minus"><h3>-</h3></div></a>
     </div>
     <div class="row row-4">
-        <a href="#"><div class="key k-1"><h3>1</h3></div></a>
-        <a href="#"><div class="key k-2"><h3>2</h3></div></a>
-        <a href="#"><div class="key k-3"><h3>3</h3></div></a>
-        <a href="#"><div class="key orange plus"><h3>+</h3></div></a>
+        <a href="#" onclick="k1();"><div class="key k-1"><h3>1</h3></div></a>
+        <a href="#" onclick="k2();"><div class="key k-2"><h3>2</h3></div></a>
+        <a href="#" onclick="k3();"><div class="key k-3"><h3>3</h3></div></a>
+        <a href="#" onclick="plus();"><div class="key orange plus"><h3>+</h3></div></a>
     </div>
     <div class="row row-5">
-        <a href="#"><div class="key k-0"><h3>0</h3></div></a>
-        <a href="#"><div class="key decimal"><h3>.</h3></div></a>
-        <a href="#"><div class="key orange equals"><h3>=</h3></div></a>
+        <a href="#" onclick="k0();"><div class="key k-0"><h3>0</h3></div></a>
+        <a href="#" onclick="decimal();"><div class="key decimal"><h3>.</h3></div></a>
+        <a href="#" onclick="equals();"><div class="key orange equals"><h3>=</h3></div></a>
     </div>
 
     
