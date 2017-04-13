@@ -101,6 +101,10 @@ i {
   font-size: 12px;
   color: #fc2d23; }
 
+.fa-coffee {
+  font-size: 12px;
+  color: #622F1C; }
+
 .large {
   font-size: 40px; }
 
@@ -188,8 +192,7 @@ html {
 body {
   position: relative;
   margin: 0;
-  padding-bottom: 80px;
-  min-height: 100%;
+  padding-bottom: 70px;
   background-color: #f0f0f0; }
 
 header {
@@ -213,7 +216,6 @@ header {
   align-self: center; }
 
 section {
-  clear: both;
   margin: 150px auto 0;
   width: 400px; }
 

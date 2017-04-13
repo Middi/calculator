@@ -25,12 +25,9 @@ html {
 body {
 	position:		     relative;
 	margin:				   	    0;
-	padding-bottom: 	     80px;
-	min-height:			     100%;
+	padding-bottom: 	     70px;
     background-color: $background;
 }
-
-
 
 header {
 	width: 100%;
@@ -55,7 +52,6 @@ header {
 }
 
 section {
-    clear: both;
     margin: 150px auto 0;
     width: 400px;
 }
@@ -84,8 +80,6 @@ section {
     text-align: right;
 }
 
-
-
 #display {
     width: 100%;
     background-color: $dark-grey;
@@ -99,7 +93,6 @@ section {
     justify-content: center;
     align-content: center;
     width: 100%;
-    // border: 1px solid red;
 }
 
 .key {
