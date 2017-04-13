@@ -66,21 +66,19 @@ section {
     p {color: $white}
 }
 
-#status-bar-logo p {
+#status-bar-logo p, #status-bar-right p {
+    padding-top: 1px;
     font-size:  12px;
     text-align: left;
 }
 
-#status-bar-right p {
-    font-size:   12px;
-    text-align: right;
-}
+#status-bar-right p {text-align: right}
 
 #display {
-    height:      130px;
+    height:      120px;
     width:        100%;
     text-align:  right;
-    padding: 26px 20px;
+    padding: 20px 20px;
     background-color: $dark-grey;
 }
 

@@ -121,42 +121,6 @@ header a {
 .built a:hover {
   text-decoration: underline; }
 
-.btn {
-  border: none;
-  background: none;
-  margin: 6px;
-  color: #fbfbfb;
-  font-size: 1rem;
-  border-radius: 6px;
-  padding: 0.6em 1em;
-  transition: all 0.2s ease; }
-  .btn:active {
-    transform: scale(0.98); }
-
-.btn-outline {
-  color: #f27b21;
-  border: 2px solid #f27b21;
-  padding: 0.52em 1.1em; }
-  .btn-outline:hover {
-    background-color: #f27b21;
-    color: #fbfbfb; }
-
-.btn-round {
-  border-radius: 50px; }
-
-.btn-sm {
-  font-size: 0.707em; }
-
-.bg-brand {
-  background-color: #f27b21; }
-  .bg-brand:hover {
-    background-color: #ec6d0e; }
-
-.bg-alt {
-  background-color: #862bab; }
-  .bg-alt:hover {
-    background-color: #762697; }
-
 .shadow {
   box-shadow: 0 4px 8px 0 rgba(99, 99, 99, 0.3), 0 6px 16px 0 rgba(99, 99, 99, 0.3); }
 
@@ -217,19 +181,19 @@ section {
   #status-bar-clock p, #status-bar-logo p, #status-bar-right p {
     color: #fbfbfb; }
 
-#status-bar-logo p {
+#status-bar-logo p, #status-bar-right p {
+  padding-top: 1px;
   font-size: 12px;
   text-align: left; }
 
 #status-bar-right p {
-  font-size: 12px;
   text-align: right; }
 
 #display {
-  height: 130px;
+  height: 120px;
   width: 100%;
   text-align: right;
-  padding: 26px 20px;
+  padding: 20px 20px;
   background-color: #181818; }
 
 .row {
