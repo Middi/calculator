@@ -29,60 +29,6 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/images\/fcc-logo.png": {
-		"ft": 32768,
-		"iS": 21620,
-		"oA": 0,
-		"oAP": "\/images\/fcc-logo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/images\/logo.png": {
-		"ft": 32768,
-		"iS": 10738,
-		"oA": 0,
-		"oAP": "\/images\/logo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/images\/no-user.jpg": {
-		"ft": 16384,
-		"iS": 11496,
-		"oA": 0,
-		"oAP": "\/images\/no-user.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/images\/no-user.png": {
-		"ft": 32768,
-		"iS": 5572,
-		"oA": 0,
-		"oAP": "\/images\/no-user.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/images\/offline.png": {
-		"ft": 32768,
-		"iS": 18663,
-		"oA": 0,
-		"oAP": "\/images\/offline.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -106,6 +52,12 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/README.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/README.html",
+		"oF": 0
 		},
 	"\/README.md": {
 		"cS": 0,

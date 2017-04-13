@@ -58,7 +58,7 @@ nav {
 
 section {
     clear: both;
-    margin: 160px auto;
+    margin: 150px auto;
     width: 400px;
     height: 662px;
 }
@@ -105,29 +105,31 @@ section {
 .orange {
     background-color: $brand;
     h3 {color: $white}
+
     &:hover {background-color: darken($brand, 6)}
 }
 
 .grey {
     background-color: $light-grey;
+
     &:hover {background-color: darken($light-grey, 8)}
 }
 
 
 footer {
 	background: $brand;
-	right: 				0;
-	bottom: 		 	0;
-	left: 			 	0;
-	width: 			 100%;
-	display: 	 	table;
-	text-align:    center;
-	position: 	 absolute;
-    height:          32px;
+	width: 		  100%;
+    height:       32px;
+	display: 	 table;
+    position:    fixed;
+    right:           0;
+    bottom:          0;
+    left:            0;
+    text-align: center;
 }
 
 .built {
-	display: table-cell;
+	display:    table-cell;
 	vertical-align: middle;
 }
 
