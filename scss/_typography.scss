@@ -21,20 +21,20 @@ body {
 
 h1, h2, h3, h4 {
   font-family: 'Open Sans';
-  font-weight: 700;
+  font-weight: 200;
   color: $text;
 }
 
-h1 {
-	font-size: 1.5em;
-	font-weight: 200;
-}
+h1 {font-size: 1.5em}
 
 h1 span {font-weight: 700}
 
-h2 {font-size: 2.827em}
+h2 {
+  font-size: 6em;
+  color: $white;
+  }
 
-h3 {font-size: 1.999em}
+h3 {font-size: 2.3em}
 
 h4 {font-size: 1.414em}
 
@@ -50,8 +50,6 @@ a {
     font-size: 1.1rem;
     font-weight: 600;
 }
-
-a:hover {text-decoration: underline}
 
 
 //--------------------------------
@@ -86,7 +84,7 @@ nav a {
   font-size: 1.8rem;
   color: $white;
   font-weight: 300;
-  
+
   i, span {color: $grey}
 
   &:hover {
