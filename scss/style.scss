@@ -38,6 +38,8 @@ header {
 	-webkit-box-pack: center;
 	-ms-flex-pack:    center;
 	justify-content:  center;
+
+    span {color: $white}
 }
 
 .logo {
@@ -63,7 +65,10 @@ section {
     width:       120px;
     text-align: center;
 
-    p {color: $white}
+    p {
+        color: $white;
+        font-weight: 200;
+    }
     span {font-weight: 700}
 }
 

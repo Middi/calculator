@@ -158,6 +158,8 @@ header {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  header span {
+    color: #fbfbfb; }
 
 .logo {
   -ms-flex-item-align: center;
@@ -179,7 +181,8 @@ section {
   width: 120px;
   text-align: center; }
   #status-bar-clock p, #status-bar-logo p, #status-bar-right p {
-    color: #fbfbfb; }
+    color: #fbfbfb;
+    font-weight: 200; }
   #status-bar-clock span, #status-bar-logo span, #status-bar-right span {
     font-weight: 700; }
 
