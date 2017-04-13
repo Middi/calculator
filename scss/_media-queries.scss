@@ -1,0 +1,20 @@
+/*=============================================
+=                 MEDIA QUERIES               =
+=============================================*/
+
+
+
+/* -- BREAK 1 -- */
+
+@media all and (max-width: 800px) {
+  
+  html {font-size: 14px}
+
+  main{margin-bottom: 20px}
+
+  article {
+    padding: 36px 32px 36px 15px;
+    height: 65px;
+    border-radius: 0;
+    }
+}
