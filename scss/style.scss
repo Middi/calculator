@@ -61,7 +61,7 @@ section {
     height: 662px;
 }
 
-#status-bar {
+#status-bar-clock, #status-bar-logo {
     width: 100%;
     background-color: $dark-grey;
     text-align: center;
@@ -69,12 +69,14 @@ section {
     p {color: $white}
 }
 
+#status-bar-logo {display: none}
+
 .display {
     width: 100%;
     background-color: $dark-grey;
-    height: 140px;
+    height: 130px;
     text-align: right;
-    padding: 30px 20px;
+    padding: 26px 20px;
 }
 
 .row {

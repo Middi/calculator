@@ -11,14 +11,15 @@
   html {font-size: 14px}
 
   section {
-    margin: 56px auto;
+    margin: 0px auto;
     max-width: 400px;
     max-height: 662px;
 }
 
-#status-bar {
-  display: none;
-}
+#status-bar-clock {display: none}
 
+#status-bar-logo {display: block}
+
+nav {display: none}
  
-}
+ }

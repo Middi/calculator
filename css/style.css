@@ -215,20 +215,23 @@ section {
   width: 400px;
   height: 662px; }
 
-#status-bar {
+#status-bar-clock, #status-bar-logo {
   width: 100%;
   background-color: #181818;
   text-align: center;
   padding-top: 6px; }
-  #status-bar p {
+  #status-bar-clock p, #status-bar-logo p {
     color: #fbfbfb; }
+
+#status-bar-logo {
+  display: none; }
 
 .display {
   width: 100%;
   background-color: #181818;
-  height: 140px;
+  height: 130px;
   text-align: right;
-  padding: 30px 20px; }
+  padding: 26px 20px; }
 
 .row {
   display: flex;
@@ -286,8 +289,12 @@ footer {
   html {
     font-size: 14px; }
   section {
-    margin: 56px auto;
+    margin: 0px auto;
     max-width: 400px;
     max-height: 662px; }
-  #status-bar {
+  #status-bar-clock {
+    display: none; }
+  #status-bar-logo {
+    display: block; }
+  nav {
     display: none; } }

@@ -14,7 +14,7 @@ function startTime() {
     // Send mins to checktime incase it needs a zero
     m = checkTime(m);
     // Add to dom
-    document.getElementById('status-bar').innerHTML =
+    document.getElementById('status-bar-clock').innerHTML =
     "<p>" + h + ":" + m + "</p>";
     // Run every 500milliseconds
     setTimeout(startTime, 500);
