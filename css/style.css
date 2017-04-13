@@ -290,4 +290,6 @@ footer {
   section {
     margin: 56px auto;
     max-width: 400px;
-    max-height: 662px; } }
+    max-height: 662px; }
+  #status-bar {
+    display: none; } }
