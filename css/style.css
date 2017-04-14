@@ -184,7 +184,7 @@ section {
     color: #fbfbfb;
     font-weight: 200; }
   #status-bar-clock span, #status-bar-logo span, #status-bar-right span {
-    font-weight: 700; }
+    font-weight: 600; }
 
 #status-bar-logo p, #status-bar-right p {
   padding-top: 1px;
@@ -199,7 +199,8 @@ section {
   width: 100%;
   text-align: right;
   padding: 20px 20px;
-  background-color: #181818; }
+  background-color: #181818;
+  overflow: hidden; }
 
 .row {
   width: 100%;
@@ -230,14 +231,14 @@ section {
   .orange h3 {
     color: #fbfbfb; }
   .orange:hover {
-    background-color: #e76b0e; }
+    background-color: #dd670d; }
   .orange:active {
     background-color: #bc570b; }
 
 .grey {
   background-color: #c1c2c3; }
   .grey:hover {
-    background-color: #acaeaf; }
+    background-color: #a7a9aa; }
   .grey:active {
     background-color: #929496; }
 
