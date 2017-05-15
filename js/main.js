@@ -47,7 +47,7 @@ function key(arg) {
 
 function math() {
     longString = total.join("");
-    total = eval(longString);
+    total = eval(longString).toFixed(5);
     // console.log(longString);
     display.innerHTML = "<h2>" + total + "</h2>";
     total = [total];
