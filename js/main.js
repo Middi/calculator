@@ -67,3 +67,9 @@ function reset() {
     total = [];
     display.innerHTML = "<h2>0</h2>";
 }
+
+function removeOne() {
+    total.splice((total.length -1), 1);
+    output = total.join("");
+    display.innerHTML = "<h2>" + output + "</h2>";
+}
