@@ -39,7 +39,7 @@ function key(arg) {
     console.log(total);
     output = total.join("");
 
-    output.replace(/\//g, '÷');
+    // total.replace('÷', '/');
 
 
     display.innerHTML = "<h2>" + output + "</h2>";
@@ -47,10 +47,18 @@ function key(arg) {
 
 function math() {
     longString = total.join("");
-    total = eval(longString).toFixed(5);
-    // console.log(longString);
-    display.innerHTML = "<h2>" + total + "</h2>";
-    total = [total];
+    total = eval(longString);
+
+    if (Math.round(total) !== total) {
+        total = total.toFixed(5);
+        display.innerHTML = "<h2>" + total + "</h2>";
+        total = [total];
+    }
+    else {
+        display.innerHTML = "<h2>" + total + "</h2>";
+        total = [total];
+    }
+
 }
 
 function reset() {
