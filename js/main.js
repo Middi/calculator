@@ -41,9 +41,13 @@ reset();
 
 // key inputs
 function key(arg) {
+    // if total array is less than 9 you can check for duplicates
+    // and add it to the array.
+    if(total.length < 9) {
     // check for duplicates
     duplicates(arg);
     // total.replace('÷', '/');
+}
     output = total.join("");
     display.innerHTML = "<h2>" + output + "</h2>";
 }
