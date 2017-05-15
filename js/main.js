@@ -81,6 +81,7 @@ function reset() {
 
 function removeOne() {
     if (total.length <= 1) {
+        total.splice((total.length - 1), 1);
         display.innerHTML = "<h2>0</h2>";
     }
     else {
@@ -89,8 +90,6 @@ function removeOne() {
         display.innerHTML = "<h2>" + output + "</h2>";
     }
 }
-
-
 
 
 function duplicates(arg) {
