@@ -243,16 +243,16 @@ section {
 /* -- BREAK 2 -- */
 @media all and (max-width: 400px) {
   section {
-    width: 310px;
+    width: 318px;
     margin: 0 auto; }
   .key {
-    height: 78px;
-    width: 78px; }
+    height: 80px;
+    width: 80px; }
   .k-0 {
-    min-width: 155px;
+    min-width: 159px;
     padding-left: 26px; }
   #display {
-    height: 114px;
-    padding: 16px 16px; }
+    height: 104px;
+    padding: 8px; }
   header {
     display: none; } }
