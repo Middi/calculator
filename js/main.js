@@ -26,32 +26,35 @@ startTime();
 
 
 
-// ---- Display ---- //
+// ---- Main Calculator ---- //
 
-// create display 0
-var display = "";
-var nums = /[0-9]/;
+var output = "";
 var total = [];
 var longString = [];
+var display = document.getElementById('display');
 
 
 function key(arg) {
     total.push(arg);
-    display = total.join("");
-    document.getElementById('display').innerHTML =
-        "<h2>" + display + "</h2>";
+    console.log(total);
+    output = total.join("");
+
+    output.replace(/\//g, '÷');
+
+
+    display.innerHTML = "<h2>" + output + "</h2>";
 }
 
 function math() {
     longString = total.join("");
-
-    document.getElementById('display').innerHTML =
-        "<h2>" + eval(longString) + "</h2>";
+    total = eval(longString);
+    // console.log(longString);
+    display.innerHTML = "<h2>" + total + "</h2>";
+    total = [total];
 }
 
 function reset() {
-    display = "";
+    output = "";
     total = [];
-    document.getElementById('display').innerHTML =
-        "<h2>0</h2>";
+    display.innerHTML = "<h2>0</h2>";
 }
