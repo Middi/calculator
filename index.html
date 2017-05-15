@@ -37,37 +37,37 @@
     <div id="display"></div>
     
     <div class="row row-1">
-        <a href="#" onclick="key(0);"><div class="key grey cancel"><h3>AC</h3></div></a>
-        <a href="#" onclick="key('-');"><div class="key grey negative"><h3>+/-</h3></div></a>
-        <a href="#" onclick="key('%');"><div class="key grey percentage"><h3>%</h3></div></a>
-        <a href="#" onclick="key('÷');"><div class="key orange divide"><h3>÷</h3></div></a>
+        <a href="#" onclick="reset();"><div class="key grey cancel"><h3>AC</h3></div></a>
+        <a href="#" onclick="event.preventDefault(); key('-');"><div class="key grey negative"><h3>+/-</h3></div></a>
+        <a href="#" onclick="event.preventDefault(); key('%');"><div class="key grey percentage"><h3>%</h3></div></a>
+        <a href="#" onclick="event.preventDefault(); key('÷');"><div class="key orange divide"><h3>÷</h3></div></a>
     </div>
 
     <div class="row row-2">
-        <a href="#" onclick="key('7');"><div class="key k-7"><h3>7</h3></div></a>
-        <a href="#" onclick="key('8');"><div class="key k-8"><h3>8</h3></div></a>
-        <a href="#" onclick="key('9');"><div class="key k-9"><h3>9</h3></div></a>
-        <a href="#" onclick="key('×');"><div class="key orange multiply"><h3>×</h3></div></a>
+        <a href="#" onclick="event.preventDefault(); key('7');"><div class="key k-7"><h3>7</h3></div></a>
+        <a href="#" onclick="event.preventDefault(); key('8');"><div class="key k-8"><h3>8</h3></div></a>
+        <a href="#" onclick="event.preventDefault(); key('9');"><div class="key k-9"><h3>9</h3></div></a>
+        <a href="#" onclick="event.preventDefault(); key('×');"><div class="key orange multiply"><h3>×</h3></div></a>
     </div>
 
     <div class="row row-3">
-        <a href="#" onclick="key('4');"><div class="key k-4"><h3>4</h3></div></a>
-        <a href="#" onclick="key('5');"><div class="key k-5"><h3>5</h3></div></a>
-        <a href="#" onclick="key('6');"><div class="key k-6"><h3>6</h3></div></a>
-        <a href="#" onclick="key('-');"><div class="key orange minus"><h3>-</h3></div></a>
+        <a href="#" onclick="event.preventDefault(); key('4');"><div class="key k-4"><h3>4</h3></div></a>
+        <a href="#" onclick="event.preventDefault(); key('5');"><div class="key k-5"><h3>5</h3></div></a>
+        <a href="#" onclick="event.preventDefault(); key('6');"><div class="key k-6"><h3>6</h3></div></a>
+        <a href="#" onclick="event.preventDefault(); key('-');"><div class="key orange minus"><h3>-</h3></div></a>
     </div>
 
     <div class="row row-4">
-        <a href="#" onclick="key('1');"><div class="key k-1"><h3>1</h3></div></a>
-        <a href="#" onclick="key('2');"><div class="key k-2"><h3>2</h3></div></a>
-        <a href="#" onclick="key('3');"><div class="key k-3"><h3>3</h3></div></a>
-        <a href="#" onclick="key('+');"><div class="key orange plus"><h3>+</h3></div></a>
+        <a href="#" onclick="event.preventDefault(); key('1');"><div class="key k-1"><h3>1</h3></div></a>
+        <a href="#" onclick="event.preventDefault(); key('2');"><div class="key k-2"><h3>2</h3></div></a>
+        <a href="#" onclick="event.preventDefault(); key('3');"><div class="key k-3"><h3>3</h3></div></a>
+        <a href="#" onclick="event.preventDefault(); key('+');"><div class="key orange plus"><h3>+</h3></div></a>
     </div>
 
     <div class="row row-5">
-        <a href="#" onclick="key('0');"><div class="key k-0"><h3>0</h3></div></a>
-        <a href="#" onclick="key('.');"><div class="key decimal"><h3>.</h3></div></a>
-        <a href="#" onclick="key(0);"><div class="key orange equals"><h3>=</h3></div></a>
+        <a href="#" onclick="event.preventDefault(); key('0');"><div class="key k-0"><h3>0</h3></div></a>
+        <a href="#" onclick="event.preventDefault(); key('.');"><div class="key decimal"><h3>.</h3></div></a>
+        <a href="#" onclick="math();"><div class="key orange equals"><h3>=</h3></div></a>
     </div>
 
     

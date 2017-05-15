@@ -257,6 +257,11 @@ footer {
   display: table-cell;
   vertical-align: middle; }
 
+#image {
+  border: 2px solid red;
+  width: 400px;
+  height: 400px; }
+
 /*=============================================
 =                 MEDIA QUERIES               =
 =============================================*/

@@ -148,5 +148,10 @@ footer {
 	vertical-align: middle;
 }
 
+#image {
+    border: 2px solid red;
+    width: 400px;
+    height: 400px;
+}
 
 @import "media-queries";

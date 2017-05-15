@@ -17,7 +17,7 @@ function startTime() {
     m = checkTime(m);
     // Add to dom
     document.getElementById('status-bar-clock').innerHTML =
-    "<p>" + h + ":" + m + "</p>";
+        "<p>" + h + ":" + m + "</p>";
     // Run every 500milliseconds
     setTimeout(startTime, 500);
 }
@@ -30,24 +30,28 @@ startTime();
 
 // create display 0
 var display = "";
-var math = [];
+var nums = /[0-9]/;
+var total = [];
+var longString = [];
+
 
 function key(arg) {
-// if 0 is in display or the argument 0 is passed into it clear the display
-    if(display === "0" || arg === 0) {
-        display = "";
-        math = [];
-    }
-    
-    //take the display and add the argument to it.
-    math.push(arg);
-    console.log(math);
-    display += arg;
-
-    
-    //print display to screen.
+    total.push(arg);
+    display = total.join("");
     document.getElementById('display').innerHTML =
-    "<h2>" + display + "</h2>";
+        "<h2>" + display + "</h2>";
 }
 
-key(0);
+function math() {
+    longString = total.join("");
+
+    document.getElementById('display').innerHTML =
+        "<h2>" + eval(longString) + "</h2>";
+}
+
+function reset() {
+    display = "";
+    total = [];
+    document.getElementById('display').innerHTML =
+        "<h2>0</h2>";
+}
