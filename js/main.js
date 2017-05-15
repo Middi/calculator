@@ -94,7 +94,8 @@ function removeOne() {
 
 
 function duplicates(arg) {
-    if ((total[total.length - 1] === arg && arg === '.') || (total[total.length - 1] === arg && arg === '-') || (total[total.length - 1] === arg && arg === '*') || (total[total.length - 1] === arg && arg === '+') || (total[total.length - 1] === arg && arg === '/')) {
+    var end = total[total.length - 1];
+    if ((end === arg && arg === '.') || (end === arg && arg === '-') || (end === arg && arg === '*') || (end === arg && arg === '+') || (end === arg && arg === '/')) {
     }
     else {
         total.push(arg);
