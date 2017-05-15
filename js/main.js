@@ -28,11 +28,12 @@ startTime();
 
 // ---- Main Calculator ---- //
 
-var output = "";
+var output = "0";
 var total = [];
 var longString = [];
 var display = document.getElementById('display');
 
+reset();
 
 function key(arg) {
     total.push(arg);
@@ -62,7 +63,7 @@ function math() {
 }
 
 function reset() {
-    output = "";
+    output = "0";
     total = [];
     display.innerHTML = "<h2>0</h2>";
 }
