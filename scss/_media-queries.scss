@@ -10,9 +10,53 @@
   
   section {
     margin:  0px auto;
-    max-width:  400px;
-    max-height: 662px;
     }
+
+ header {display: none}
+
+
+
+
+footer {
+	background: $brand;
+	width: 		  100%;
+  height:       32px;
+	display: 	 table;
+  position:   relative;
+  text-align: center;
+}
+
+.built {
+	display:    table-cell;
+	vertical-align: middle;
+}
+
+
+ }
+
+
+/* -- BREAK 2 -- */
+
+@media all and (max-width: 374px) {
+  
+  section {
+    width:   320px;
+}
+
+.key {
+    height: 80px;
+    width:  80px;
+}
+
+.k-0 {
+    min-width:   160px;
+    padding-left: 28px;
+}
+ 
+ #display {
+    height:      110px;
+    padding: 16px 16px;
+ }
 
  header {display: none}
  }

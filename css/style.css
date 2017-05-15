@@ -168,7 +168,7 @@ header {
 
 section {
   margin: 150px auto 0;
-  width: 400px; }
+  width: 372px; }
 
 .status-bar {
   width: 100%;
@@ -209,8 +209,8 @@ section {
   align-content: center; }
 
 .key {
-  height: 100px;
-  width: 100px;
+  height: 93px;
+  width: 93px;
   text-align: center;
   display: table-cell;
   vertical-align: middle;
@@ -222,7 +222,7 @@ section {
     background-color: #bbbbbb; }
 
 .k-0 {
-  min-width: 200px;
+  min-width: 186px;
   text-align: left;
   padding-left: 40px; }
 
@@ -257,19 +257,38 @@ footer {
   display: table-cell;
   vertical-align: middle; }
 
-#image {
-  border: 2px solid red;
-  width: 400px;
-  height: 400px; }
-
 /*=============================================
 =                 MEDIA QUERIES               =
 =============================================*/
 /* -- BREAK 1 -- */
 @media all and (max-width: 440px) {
   section {
-    margin: 0px auto;
-    max-width: 400px;
-    max-height: 662px; }
+    margin: 0px auto; }
+  header {
+    display: none; }
+  footer {
+    background: #f27b21;
+    width: 100%;
+    height: 32px;
+    display: table;
+    position: relative;
+    text-align: center; }
+  .built {
+    display: table-cell;
+    vertical-align: middle; } }
+
+/* -- BREAK 2 -- */
+@media all and (max-width: 374px) {
+  section {
+    width: 320px; }
+  .key {
+    height: 80px;
+    width: 80px; }
+  .k-0 {
+    min-width: 160px;
+    padding-left: 28px; }
+  #display {
+    height: 110px;
+    padding: 16px 16px; }
   header {
     display: none; } }

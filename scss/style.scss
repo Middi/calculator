@@ -50,7 +50,7 @@ header {
 
 section {
     margin: 150px auto 0;
-    width:         400px;
+    width:         372px;
 }
 
 .status-bar {
@@ -97,8 +97,8 @@ section {
 }
 
 .key {
-    height: 100px;
-    width:  100px;
+    height: 93px;
+    width:  93px;
     text-align:     center;
 	display:    table-cell;
 	vertical-align: middle;
@@ -110,7 +110,7 @@ section {
 }
 
 .k-0 {
-    min-width:   200px;
+    min-width:   186px;
     text-align:   left;
     padding-left: 40px;
 }
@@ -146,12 +146,6 @@ footer {
 .built {
 	display:    table-cell;
 	vertical-align: middle;
-}
-
-#image {
-    border: 2px solid red;
-    width: 400px;
-    height: 400px;
 }
 
 @import "media-queries";
