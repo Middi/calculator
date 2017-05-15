@@ -31,18 +31,20 @@ startTime();
 var output = "0";
 var total = [];
 var longString = [];
+
+// Dom Display
 var display = document.getElementById('display');
 
+// Start with 0 in display
 reset();
 
+
+// key inputs
 function key(arg) {
-    total.push(arg);
-    console.log(total);
-    output = total.join("");
-
+    // check for duplicates
+    duplicates(arg);
     // total.replace('÷', '/');
-
-
+    output = total.join("");
     display.innerHTML = "<h2>" + output + "</h2>";
 }
 
@@ -60,6 +62,15 @@ function math() {
         total = [total];
     }
 
+    // ================
+    //  if next thing is an operator continue maths
+    //  if not then reset output and total.
+    // ================
+
+
+    output = "0";
+    total = [];
+
 }
 
 function reset() {
@@ -69,7 +80,23 @@ function reset() {
 }
 
 function removeOne() {
-    total.splice((total.length -1), 1);
-    output = total.join("");
-    display.innerHTML = "<h2>" + output + "</h2>";
+    if (total.length <= 1) {
+        display.innerHTML = "<h2>0</h2>";
+    }
+    else {
+        total.splice((total.length - 1), 1);
+        output = total.join("");
+        display.innerHTML = "<h2>" + output + "</h2>";
+    }
+}
+
+
+
+
+function duplicates(arg) {
+    if ((total[total.length - 1] === arg && arg === '.') || (total[total.length - 1] === arg && arg === '-') || (total[total.length - 1] === arg && arg === '*') || (total[total.length - 1] === arg && arg === '+') || (total[total.length - 1] === arg && arg === '/')) {
+    }
+    else {
+        total.push(arg);
+    }
 }
