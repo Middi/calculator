@@ -6,9 +6,9 @@
 /* -- BREAK 1 -- */
 
 @media all and (max-width: 600px) {
-    section {
-        margin: 30px auto 0;
-    }
+
+    section {margin: 30px auto 0}
+
     .built {
         display: table-cell;
         vertical-align: middle;
@@ -19,23 +19,24 @@
 /* -- BREAK 2 -- */
 
 @media all and (max-width: 400px) {
+
     section {
         width: 318px;
         margin: 0 auto;
     }
+
     .key {
         height: 80px;
         width: 80px;
     }
+
     .k-0 {
         min-width: 159px;
         padding-left: 26px;
     }
+
     #display {
         height: 104px;
         padding: 8px;
-    }
-    header {
-        display: none
     }
 }
