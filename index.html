@@ -22,68 +22,99 @@
 <body>
     <main>
 
-<section>
-    <div class="status-bar">
-        <div id="status-bar-logo"><p><i class="fa fa-free-code-camp" aria-hidden="true"> </i> <span>JS</span>Calculator</h1></div>
-        <div id="status-bar-clock"></div>
-        <div id="status-bar-right"><p>100% <i class="fa fa-battery-full" aria-hidden="true"></i></p></div>
-    </div>
+        <section>
+            <div class="status-bar">
 
-    <div id="display"></div>
-    
-    <div class="row row-1">
-        <a href="#" onclick="reset();"><div class="key grey cancel"><h3>AC</h3></div></a>
-        <a href="#" onclick="event.preventDefault(); removeOne();"><div class="key grey percentage"><h3>CE</h3></div></a>
-        <a href="#" onclick="event.preventDefault(); key('-');"><div class="key grey negative"><h3>+/-</h3></div></a>
-        <a href="#" onclick="event.preventDefault(); key('/');"><div class="key orange divide"><h3>÷</h3></div></a>
-    </div>
+                <div id="status-bar-logo">
+                    <p><i class="fa fa-free-code-camp" aria-hidden="true"> </i>
+                    
+                    <span>JS</span>Calculator</h1>
+                </div>
 
-    <div class="row row-2">
-        <a href="#" onclick="event.preventDefault(); key('7');"><div class="key k-7"><h3>7</h3></div></a>
-        <a href="#" onclick="event.preventDefault(); key('8');"><div class="key k-8"><h3>8</h3></div></a>
-        <a href="#" onclick="event.preventDefault(); key('9');"><div class="key k-9"><h3>9</h3></div></a>
-        <a href="#" onclick="event.preventDefault(); key('*');"><div class="key orange multiply"><h3>×</h3></div></a>
-    </div>
+                <div id="status-bar-clock"></div>
 
-    <div class="row row-3">
-        <a href="#" onclick="event.preventDefault(); key('4');"><div class="key k-4"><h3>4</h3></div></a>
-        <a href="#" onclick="event.preventDefault(); key('5');"><div class="key k-5"><h3>5</h3></div></a>
-        <a href="#" onclick="event.preventDefault(); key('6');"><div class="key k-6"><h3>6</h3></div></a>
-        <a href="#" onclick="event.preventDefault(); key('-');"><div class="key orange minus"><h3>-</h3></div></a>
-    </div>
+                <div id="status-bar-right">
+                    <p>100% <i class="fa fa-battery-full" aria-hidden="true"></i></p>
+                </div>
 
-    <div class="row row-4">
-        <a href="#" onclick="event.preventDefault(); key('1');"><div class="key k-1"><h3>1</h3></div></a>
-        <a href="#" onclick="event.preventDefault(); key('2');"><div class="key k-2"><h3>2</h3></div></a>
-        <a href="#" onclick="event.preventDefault(); key('3');"><div class="key k-3"><h3>3</h3></div></a>
-        <a href="#" onclick="event.preventDefault(); key('+');"><div class="key orange plus"><h3>+</h3></div></a>
-    </div>
+            </div>
 
-    <div class="row row-5">
-        <a href="#" onclick="event.preventDefault(); key('0');"><div class="key k-0"><h3>0</h3></div></a>
-        <a href="#" onclick="event.preventDefault(); key('.');"><div class="key decimal"><h3>.</h3></div></a>
-        <a href="#" onclick="math();"><div class="key orange equals"><h3>=</h3></div></a>
-    </div>
+            <div id="display"></div>
 
-    <div class="row footer">
-    <p class="built">Built with <i class="fa fa-heart" aria-hidden="true"></i> & <i class="fa fa-coffee" aria-hidden="true"></i> by <a href="http://www.richardmiddleton.me"><strong>RICHARD MIDDLETON</strong></a></p>
-    </div>
+            <div class="row row-1">
 
-    
-</section>
-        
+                <a href="#" onclick="reset();"><div class="key grey cancel"><h3>AC</h3></div></a>
+
+                <a href="#" onclick="event.preventDefault(); removeOne();"><div class="key grey percentage"><h3>CE</h3></div></a>
+
+                <a href="#" onclick="event.preventDefault(); key('-');"><div class="key grey negative"><h3>+/-</h3></div></a>
+
+                <a href="#" onclick="event.preventDefault(); key('/');"><div class="key orange divide"><h3>÷</h3></div></a>
+
+            </div>
+
+            <div class="row row-2">
+
+                <a href="#" onclick="event.preventDefault(); key('7');"><div class="key k-7"><h3>7</h3></div></a>
+
+                <a href="#" onclick="event.preventDefault(); key('8');"><div class="key k-8"><h3>8</h3></div></a>
+
+                <a href="#" onclick="event.preventDefault(); key('9');"><div class="key k-9"><h3>9</h3></div></a>
+
+                <a href="#" onclick="event.preventDefault(); key('*');"><div class="key orange multiply"><h3>×</h3></div></a>
+
+            </div>
+
+            <div class="row row-3">
+
+                <a href="#" onclick="event.preventDefault(); key('4');"><div class="key k-4"><h3>4</h3></div></a>
+
+                <a href="#" onclick="event.preventDefault(); key('5');"><div class="key k-5"><h3>5</h3></div></a>
+
+                <a href="#" onclick="event.preventDefault(); key('6');"><div class="key k-6"><h3>6</h3></div></a>
+
+                <a href="#" onclick="event.preventDefault(); key('-');"><div class="key orange minus"><h3>-</h3></div></a>
+
+            </div>
+
+            <div class="row row-4">
+
+                <a href="#" onclick="event.preventDefault(); key('1');"><div class="key k-1"><h3>1</h3></div></a>
+
+                <a href="#" onclick="event.preventDefault(); key('2');"><div class="key k-2"><h3>2</h3></div></a>
+
+                <a href="#" onclick="event.preventDefault(); key('3');"><div class="key k-3"><h3>3</h3></div></a>
+
+                <a href="#" onclick="event.preventDefault(); key('+');">  <div class="key orange plus"><h3>+</h3></div></a>
+
+            </div>
+
+            <div class="row row-5">
+
+                <a href="#" onclick="event.preventDefault(); key('0');"><div class="key k-0"><h3>0</h3></div></a>
+
+                <a href="#" onclick="event.preventDefault(); key('.');"><div class="key decimal"><h3>.</h3></div></a>
+
+                <a href="#" onclick="math();"><div class="key orange equals"><h3>=</h3></div></a>
+
+            </div>
+
+            <div class="row footer">
+                <p class="built">Built with <i class="fa fa-heart" aria-hidden="true"></i> & <i class="fa fa-coffee" aria-hidden="true"></i>                    by <a href="http://www.richardmiddleton.me"><strong>RICHARD MIDDLETON</strong></a></p>
+            </div>
+
+
+        </section>
+
     </main>
+
+
+    <!-- Javascript -->
+    <script src="js/main.js"></script>
 
 </body>
 
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-<!-- JQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-<!-- Javascript -->
-<script src="js/main.js"></script>
 
 </html>
