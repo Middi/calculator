@@ -3,60 +3,39 @@
 =============================================*/
 
 
-
 /* -- BREAK 1 -- */
 
 @media all and (max-width: 600px) {
-  
-  section {
-    margin:  30px auto;
+    section {
+        margin: 30px auto 0;
     }
-
- header {display: none}
-
-.built {
-	display:    table-cell;
-	vertical-align: middle;
+    .built {
+        display: table-cell;
+        vertical-align: middle;
+    }
 }
-
-
- }
 
 
 /* -- BREAK 2 -- */
 
 @media all and (max-width: 400px) {
-  
-  section {
-    width:   320px;
-}
-
-.key {
-    height: 80px;
-    width:  80px;
-}
-
-.k-0 {
-    min-width:   160px;
-    padding-left: 28px;
-}
- 
- #display {
-    height:      110px;
-    padding: 16px 16px;
- }
-
- header {display: none}
- }
-
-
-
-/* -- BREAK 3 -- */
-
-@media all and (max-width: 350px) {
-  
-  section {
-    margin:  3px auto;
+    section {
+        width: 310px;
+        margin: 0 auto;
     }
-
- }
+    .key {
+        height: 78px;
+        width: 78px;
+    }
+    .k-0 {
+        min-width: 155px;
+        padding-left: 26px;
+    }
+    #display {
+        height: 114px;
+        padding: 16px 16px;
+    }
+    header {
+        display: none
+    }
+}
