@@ -41,15 +41,14 @@ reset();
 
 // key inputs
 function key(arg) {
-    // if total array is less than 9 you can check for duplicates
-    // and add it to the array.
-    if(total.length < 9) {
+    // check length of display
+    fontSize();
     // check for duplicates
     duplicates(arg);
     // total.replace('÷', '/');
-}
     output = total.join("");
     display.innerHTML = "<h2>" + output + "</h2>";
+    
 }
 
 function math() {
@@ -75,11 +74,14 @@ function math() {
     output = "0";
     total = [];
 
+    fontSize();
+
 }
 
 function reset() {
     output = "0";
     total = [];
+    fontSize();
     display.innerHTML = "<h2>0</h2>";
 }
 
@@ -93,6 +95,7 @@ function removeOne() {
         output = total.join("");
         display.innerHTML = "<h2>" + output + "</h2>";
     }
+    fontSize();
 }
 
 
@@ -102,5 +105,18 @@ function duplicates(arg) {
     }
     else {
         total.push(arg);
+    }
+}
+
+function fontSize() {
+    // if total array is less than 9 you can check for duplicates
+    // and add it to the array.
+    var h3 = document.getElementById('display');
+    if (total.length > 8) {
+        h3.className = "smallest";
+    }
+   
+    else {
+        h3.className = "larger";
     }
 }

@@ -60,10 +60,19 @@ section {
     height:      120px;
     width:        100%;
     text-align:  right;
-    padding: 38px 8px 0;
     background-color: $dark-grey;
     overflow: hidden;
-}
+    }
+
+.larger {
+    padding: 38px 8px 0;}
+
+
+.smallest {
+    font-size: 0.7em;
+    overflow-wrap: break-word;
+    }
+
 
 .row {
     width:             100%;

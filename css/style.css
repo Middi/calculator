@@ -72,6 +72,9 @@ h2 {
 h3 {
   font-size: 2.3em; }
 
+.smaller {
+  font-size: 1.8em; }
+
 p {
   color: #262626; }
 
@@ -176,9 +179,15 @@ section {
   height: 120px;
   width: 100%;
   text-align: right;
-  padding: 38px 8px 0;
   background-color: #181818;
   overflow: hidden; }
+
+.larger {
+  padding: 38px 8px 0; }
+
+.smallest {
+  font-size: 0.7em;
+  overflow-wrap: break-word; }
 
 .row {
   width: 100%;
