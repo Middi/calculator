@@ -145,3 +145,25 @@ function fontSize() {
         h3.className = "larger";
     }
 }
+
+function minus() {
+    // if last command was equals and new arg is a number
+    if(lastCommand === 'minus') {
+        total.splice((total.length - 1), 1);
+        // update dom
+        display.innerHTML = "<h2>" + output + "</h2>";
+    }
+    else {
+    total.push('-');
+    }
+    output = total.join("");
+    // update dom
+    display.innerHTML = "<h2>" + output + "</h2>";
+    // label last command as not being the equals operator
+    if(lastCommand !== 'minus') {
+        lastCommand = 'minus';
+    }
+    else {
+        lastCommand = 'not-equals';
+    }
+}
