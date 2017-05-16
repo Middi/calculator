@@ -49,18 +49,13 @@ function key(arg) {
         total = [arg];
     }
     // else if last command was equals and new comand is decimal point
-    else if(arg === '.') {
-         if(lastCommand === 'equals') {
+    else if(lastCommand === 'equals' && arg === '.') {
          // clear the output to receive new calculation
         output = "";
-        // and put the new arg in the total variable
-        total = ["0" + arg];
-         }
-         else {
-        // check for duplicates
-        duplicates(arg);
-         }
+        // and put the two things in the array
+        total = ["0", "."];
     }
+    
     else {
         // check for duplicates
         duplicates(arg);
@@ -79,13 +74,19 @@ function key(arg) {
 function math() {
     // make long string one string from the total array
     longString = total.join("");
+
     // evaluate the maths
     total = eval(longString);
+    console.log(total);
     if (Math.round(total) !== total) {
         // removes ending zeros with + before total.
         // then rounds to 5 decimal places if needs be.
         total = +total.toFixed(5);
         display.innerHTML = "<h2>" + total + "</h2>";
+        total = [total];
+    }
+    else if (!isFinite(total)) {
+        display.innerHTML = "<h2>ERROR</h2>";
         total = [total];
     }
     else {    
