@@ -28,7 +28,7 @@ startTime();
 // ---- Main Calculator ---- //
 
 var output = "0";
-var total = [];
+var total = [""];
 var longString = [];
 var lastCommand;
 
@@ -87,17 +87,18 @@ function math() {
         total = [total];
     }
 
+
     // check length of display
     fontSize();
 
     // set the last command to equals to use when restarting new calc
     lastCommand = 'equals';
-
+    
 }
 
 function reset() {
     output = "0";
-    total = [];
+    total = [""];
     fontSize();
     display.innerHTML = "<h2>0</h2>";
 
@@ -126,6 +127,7 @@ function duplicates(arg) {
     var end = total[total.length - 1];
     // if the last thing in the array is not a number then do nothing.
     if (isNaN(parseInt(end)) && isNaN(parseInt(arg))) {
+        return;
     }
     else {
         total.push(arg);
