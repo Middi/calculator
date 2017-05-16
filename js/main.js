@@ -146,9 +146,9 @@ function fontSize() {
     }
 }
 
-function minus() {
+function negative() {
     // if last command was equals and new arg is a number
-    if(lastCommand === 'minus') {
+    if(lastCommand === 'negative') {
         total.splice((total.length - 1), 1);
         // update dom
         display.innerHTML = "<h2>" + output + "</h2>";
@@ -160,8 +160,8 @@ function minus() {
     // update dom
     display.innerHTML = "<h2>" + output + "</h2>";
     // label last command as not being the equals operator
-    if(lastCommand !== 'minus') {
-        lastCommand = 'minus';
+    if(lastCommand !== 'negative') {
+        lastCommand = 'negative';
     }
     else {
         lastCommand = 'not-equals';
