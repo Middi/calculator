@@ -49,11 +49,17 @@ function key(arg) {
         total = [arg];
     }
     // else if last command was equals and new comand is decimal point
-    else if(lastCommand === 'equals' && arg === '.') {
-        // clear the output to receive new calculation
+    else if(arg === '.') {
+         if(lastCommand === 'equals') {
+         // clear the output to receive new calculation
         output = "";
         // and put the new arg in the total variable
-        total = ['0' + arg];
+        total = ["0" + arg];
+         }
+         else {
+        // check for duplicates
+        duplicates(arg);
+         }
     }
     else {
         // check for duplicates
@@ -102,7 +108,7 @@ function reset() {
     fontSize();
     display.innerHTML = "<h2>0</h2>";
 
-    lastCommand = 'not-equals';
+    lastCommand = 'equals';
 }
 
 function removeOne() {
