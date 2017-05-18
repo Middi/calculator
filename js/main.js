@@ -55,6 +55,10 @@ function key(arg) {
         // and put the two things in the array
         total = ["0", "."];
     }
+
+    else if(total[total.length-2] === "." && arg === '.') {
+
+    }
     
     else {
         // check for duplicates
